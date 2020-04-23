@@ -1,0 +1,64 @@
+﻿﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="script/BishBosh.js"></script>
+    <link href="styles/main.css" rel="stylesheet" />
+    <title>Bish-Bosh2.0</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-1 text-center text-dark font-weight-bold">Bish-Bosh 2.0</h1>
+    </header>
+    <div class="container">
+        <div class="Bishbosh">
+            <h3> SOLUTION & METHOD:</h3>
+            <p>A very small application to run BISH-BOSH GAME!
+                Prints out numbers 1 to 100,
+                Replace all numbers divisible by 3 with “Bish”,
+                Replace all numbers divisible by 4 with “Bosh”,
+                replace all numbers divisible by both 3 and 4 with “bishbosh”
+            </p>
+            <p>
+                <div>
+                    step1: created a function myfunction() with extended arguments.Iterartive loops
+                    step 3:The first % division will divide the current loop value, and if it is evenly divided it will display "Bish"
+                    step 4:The second division is just as the same like previous step, it will display"Bosh"
+                    If both first and second % value is evenly divided then it will display "Bish-Bosh".
+                    The number will be displayed if none of the conditions are true
+                </div>
+            </p>
+        </div>
+        <h3>CALCULATION:</h3>
+        <label for="number">Enter Any Number!  How far you want to go?:</label>
+        <input type="text" class="form-control border-dark mb-1 mr-sm-2" id="number" /><br>
+        <label for="bishnumber">Enter a Bish DivisibleNumber :</label>
+        <input type="text" class="form-control border-dark mb-1 mr-sm-2" id="bishnumber" /><br>
+        <label for="boshnumber">Enter a Bosh Divisible number:</label>
+        <input type="text" class="form-control border-dark mb-1 mr-sm-2" id="boshnumber" /><br>
+
+        <button onclick="getElementById('demo').innerHTML=myFunction(getElementById('number').value, getElementById('bishnumber').value, getElementById('boshnumber').value)">
+
+            Display Bish Bosh Results
+        </button>
+
+        <p id="demo"></p>
+    </div>
+
+</body>
+</html>
+
+
+<footer>
+
+    <p>Copyright &copy; 2020</p>
+    <p>Webmaster: Mahe</p>
+
+</footer>
+
