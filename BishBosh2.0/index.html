@@ -35,15 +35,15 @@
                 </div>
             </p>
         </div>
-        <h3>BISH-BOSH GAME:</h3>
-        <label for="myvalue">Enter Any Number!  How far you want to go?:</label>
-        <input type="text" class="form-control border-dark mb-1 mr-sm-2" id="myvalue" /><br>
+        <h3>BISH BOSH GAME:</h3>
+        <label for="number">Enter Any Number!  How far you want to go?:</label>
+        <input type="text" class="form-control border-dark mb-1 mr-sm-2" id="number" /><br>
         <label for="bishnumber">Enter a Bish DivisibleNumber :</label>
         <input type="text" class="form-control border-dark mb-1 mr-sm-2" id="bishnumber" /><br>
         <label for="boshnumber">Enter a Bosh Divisible number:</label>
         <input type="text" class="form-control border-dark mb-1 mr-sm-2" id="boshnumber" /><br>
 
-        <button onclick= myFunction()>
+        <button onclick="getElementById('demo').innerHTML=myFunction(getElementById('number').value, getElementById('bishnumber').value, getElementById('boshnumber').value)">
 
             Display Bish Bosh Results
         </button>
