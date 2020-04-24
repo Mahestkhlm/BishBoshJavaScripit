@@ -1,16 +1,19 @@
-﻿function myFunction(p1, bishnumber, boshnumber) {
+﻿function myFunction() {
+    var mylimit = document.getElementById("myvalue").value;
+    var bishvalue = document.getElementById("bishnumber").value;
+    var boshvalue = document.getElementById("boshnumber").value;
     var text = "";
-    for (i = 1; i <= p1; i++) {
-        if (i % bishnumber == 0 && i % boshnumber == 0) {
+    for (i = 1; i <= mylimit; i++) {
+        if (i % bishvalue == 0 && i % boshvalue == 0) {
             text += "Bish-Bosh" + ", ";
-        } else if (i % bishnumber == 0) {
+        } else if (i % bishvalue == 0) {
             text += "Bish" + ", ";
-        } else if (i % boshnumber == 0) {
+        } else if (i % boshvalue == 0) {
             text += "Bosh" + ", ";
         } else {
             text += i + ", ";
         }
     }
-    return text;
+   document.getElementById('demo').innerHTML = text;
 }
 //very simple code
